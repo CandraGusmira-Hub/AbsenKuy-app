@@ -9,7 +9,13 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Lokasi digunakan untuk memeriksa apakah Anda berada di dalam area presensi."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyBNHOA9sB3wKAk3rApNS14ZGPs9WLhDp-k"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +25,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBNHOA9sB3wKAk3rApNS14ZGPs9WLhDp-k"
+        }
+      },
+      "package": "com.anonymous.presensiapp"
     },
     "web": {
       "output": "static",
@@ -38,7 +50,9 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
